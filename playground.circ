@@ -74,17 +74,10 @@
   <circuit name="main">
     <a name="appearance" val="classic"/>
     <comp lib="1" loc="(100,180)" name="Pin">
-      <a name="radix" val="10unsigned"/>
+      <a name="radix" val="10signed"/>
       <a name="width" val="8"/>
     </comp>
     <comp lib="1" loc="(330,240)" name="Pin"/>
-    <comp lib="1" loc="(480,100)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="labelloc" val="east"/>
-      <a name="radix" val="10unsigned"/>
-      <a name="type" val="output"/>
-      <a name="width" val="8"/>
-    </comp>
     <comp lib="1" loc="(510,350)" name="Pin">
       <a name="facing" val="west"/>
       <a name="labelloc" val="east"/>
@@ -97,38 +90,24 @@
       <a name="labelloc" val="east"/>
       <a name="type" val="output"/>
     </comp>
-    <comp lib="1" loc="(530,240)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="labelloc" val="east"/>
-      <a name="type" val="output"/>
-    </comp>
     <comp lib="1" loc="(90,50)" name="Pin">
-      <a name="radix" val="10unsigned"/>
+      <a name="radix" val="10signed"/>
       <a name="width" val="8"/>
     </comp>
-    <comp loc="(420,100)" name="byte_adder"/>
     <comp loc="(420,350)" name="byte_add_sub"/>
     <wire from="(100,180)" to="(180,180)"/>
     <wire from="(180,180)" to="(180,370)"/>
-    <wire from="(180,180)" to="(220,180)"/>
     <wire from="(180,370)" to="(320,370)"/>
     <wire from="(190,100)" to="(270,100)"/>
     <wire from="(190,50)" to="(190,100)"/>
-    <wire from="(220,120)" to="(220,180)"/>
-    <wire from="(220,120)" to="(320,120)"/>
     <wire from="(270,100)" to="(270,350)"/>
-    <wire from="(270,100)" to="(320,100)"/>
     <wire from="(270,350)" to="(320,350)"/>
     <wire from="(330,240)" to="(370,240)"/>
     <wire from="(370,240)" to="(370,340)"/>
-    <wire from="(420,100)" to="(480,100)"/>
-    <wire from="(420,120)" to="(490,120)"/>
     <wire from="(420,350)" to="(510,350)"/>
     <wire from="(420,370)" to="(480,370)"/>
     <wire from="(480,370)" to="(480,430)"/>
     <wire from="(480,430)" to="(520,430)"/>
-    <wire from="(490,120)" to="(490,240)"/>
-    <wire from="(490,240)" to="(530,240)"/>
     <wire from="(520,430)" to="(530,430)"/>
     <wire from="(90,50)" to="(190,50)"/>
   </circuit>
